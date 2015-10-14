@@ -1,0 +1,16 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+public class Automaton_3000 extends Tower{
+    private String name;
+    private Integer damage;
+    private Integer range;
+    private Image image;
+    public Automaton_3000(){
+        cost=30;
+        name="Automaton 3000";
+        damage=1;
+        range=3;
+        image=new ImageIcon("AUTOMATON_3000").getImage();
+    }
+}

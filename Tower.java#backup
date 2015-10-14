@@ -1,0 +1,10 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+public interface Tower{
+     public int cost=0;
+     public String name="";
+     public int damage=0;
+     public int range=0;
+     public Image image = new ImageIcon("tileset_air.png").getImage();
+}

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Screen()
+comment1.params=
+comment1.target=void\ define()
+comment2.params=g
+comment2.target=void\ paintComponent(java.awt.Graphics)
+comment3.params=
+comment3.target=void\ run()
+numComments=4

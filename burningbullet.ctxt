@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=d\ img
+comment0.target=BurningBullet(int,\ java.awt.Image)
+comment1.params=
+comment1.target=void\ hitDetection()
+comment2.params=g
+comment2.target=void\ draw(java.awt.Graphics)
+numComments=3

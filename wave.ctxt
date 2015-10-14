@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Wave()
+comment1.params=bool
+comment1.target=void\ setClicked(boolean)
+comment10.params=
+comment10.target=void\ getWave()
+comment2.params=
+comment2.target=java.util.ArrayList\ getMyMinions()
+comment3.params=
+comment3.target=void\ minionsMove()
+comment4.params=x
+comment4.target=void\ setCurrWave(int)
+comment5.params=
+comment5.target=void\ resetCounter()
+comment6.params=
+comment6.target=int\ getCurrWave()
+comment7.params=
+comment7.target=boolean\ isNewWave()
+comment8.params=
+comment8.target=void\ launchAssault()
+comment9.params=
+comment9.target=boolean\ haveYouSlainThemAll()
+numComments=11

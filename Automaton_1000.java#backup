@@ -1,0 +1,19 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+public class Automaton_1000 implements Tower{
+    public Integer cost;
+    public String name;
+    public Integer damage;
+    public Integer range;
+    public Image image;
+    public Automaton_1000(){
+        cost=30;
+        name="Automaton 1000";
+        damage=1;
+        range=3;
+        image=new ImageIcon("AUTOMATON_1000").getImage();
+    }
+    //hey aaron thanks for working on this
+    // i could help too, i can continue to code
+}

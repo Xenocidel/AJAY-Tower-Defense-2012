@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=x\ y
+comment0.target=RadiationTower(int,\ int)
+comment1.params=
+comment1.target=void\ eraseBullet()
+comment2.params=
+comment2.target=void\ reset()
+comment3.params=
+comment3.target=void\ peace()
+comment4.params=
+comment4.target=void\ detectMinions()
+comment5.params=
+comment5.target=RadiationTower()
+numComments=6

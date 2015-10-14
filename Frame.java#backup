@@ -1,0 +1,109 @@
+/*
+Project Title: AJAY Tower Defense
+Authors: Aaron Liao, Jeffrey Wang, Alex Wang, Yunjun Kim
+Readme.txt for more information
+*/
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;//imports Listeners
+public class Frame extends JFrame {
+    public static String title = "AJAY Tower Defense";//window title
+    public static Dimension size = new Dimension(1024,768);
+    private JPanel mousepanel;
+    public Frame(){
+        setTitle(title);
+        setSize(size);
+        setResizable(false);
+        setBackground(Color.WHITE);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        init();
+    }
+    public static void main(String args[]){
+        Frame frame = new Frame();
+    }
+    public void init(){
+        setLayout(new GridLayout(1,1,0,0));
+        Screen screen = new Screen();
+        add(screen);
+        setVisible(true);
+        mousepanel = screen;
+        HandlerClass handler = new HandlerClass();
+        //start mouse and key inputs
+        mousepanel.addMouseListener(handler);
+        mousepanel.addMouseMotionListener(handler);
+    }
+    public class HandlerClass implements MouseListener, MouseMotionListener{
+        private Tower tower = null;
+        
+        //MouseListener classes
+        public void mouseClicked(MouseEvent e){
+            System.out.println("click at "+e.getX()+", "+e.getY());
+        }
+        public void mousePressed(MouseEvent e){
+            System.out.println("pressed");
+            if (tower!=null){
+                if (e.getX()>=830||Room.block[e.getY()%32][e.getX()%32].airID!=Value.airAir){
+                    System.out.println("Invalid location");
+                }
+                
+                if (Room.block[e.getY()/32][e.getX()/32].groundID==1){
+                    Screen.numTowers++;    
+                    Screen.tplace.add(tower);
+                    Screen.xplace=Screen.xval;
+                    Screen.yplace=Screen.yval;
+                    Screen.to=null;
+                    tower=null;
+                        
+                }
+            }
+            if ((e.getX()>=850&&e.getX()<=914)&&(e.getY()>=20&&e.getY()<=84)){
+                tower=new Automaton_1000();
+                Screen.to=tower;
+            }
+            if ((e.getX()>=850&&e.getX()<=914)&&(e.getY()>=94&&e.getY()<=158)){
+                tower=new Automaton_2000();
+                Screen.to=tower;
+            }
+            if ((e.getX()>=850&&e.getX()<=914)&&(e.getY()>=168&&e.getY()<=232)){
+                tower=new Automaton_3000();
+                Screen.to=tower;
+            }
+            if ((e.getX()>=850&&e.getX()<=914)&&(e.getY()>=242&&e.getY()<=306)){
+                tower=new RadiationTower();
+                Screen.to=tower;
+            }
+            if ((e.getX()>=850&&e.getX()<=914)&&(e.getY()>=316&&e.getY()<=380)){
+                tower=new Unknown();
+                Screen.to=tower;
+            }
+            if ((e.getX()>=850&&e.getX()<=914)&&(e.getY()>=390&&e.getY()<=454)&&(UI.gold>=10)){
+                UI.life++;
+                UI.gold-=10;
+            }
+            if ((e.getX()>=844&&e.getX()<=1015)&&(e.getY()>=609&&e.getY()<=666)){
+                UI.level++;
+            }
+        }
+        public void mouseReleased(MouseEvent e){
+            System.out.println("released");
+        }
+        public void mouseEntered(MouseEvent e){
+        }
+        public void mouseExited(MouseEvent e){
+            //pause game
+        }
+        //MouseMotionListener classes
+        public void mouseDragged(MouseEvent e){
+            if (Screen.to!=null){
+                Screen.xval=e.getX()/32*32;
+                Screen.yval=e.getY()/32*32;
+            }
+        }
+        public void mouseMoved(MouseEvent e){
+            if (Screen.to!=null){
+                Screen.xval=e.getX()/32*32;
+                Screen.yval=e.getY()/32*32;
+            }
+        }
+    }
+}

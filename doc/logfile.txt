@@ -1,0 +1,46 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.7.0_04\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.7
+-classpath
+C:\Program Files (x86)\BlueJ\lib\bluejcore.jar;C:\Program Files (x86)\BlueJ\lib\junit-4.8.2.jar;C:\Users\Aaron\Documents\Dropbox\AJAY Tower Defense
+-d
+C:\Users\Aaron\Documents\Dropbox\AJAY Tower Defense\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+C:\Program Files (x86)\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+C:\Users\Aaron\Documents\Dropbox\AJAY Tower Defense\Frame.java
+<---- end of javadoc command ---->
+Loading source file C:\Users\Aaron\Documents\Dropbox\AJAY Tower Defense\Frame.java...
+Constructing Javadoc information...
+C:\Users\Aaron\Documents\Dropbox\AJAY Tower Defense\Frame.java:12: error: package javax.sound does not exist
+import javax.sound.*;
+^
+Standard Doclet version 1.7.0_04
+Building tree for all the packages and classes...
+Generating C:\Users\Aaron\Documents\Dropbox\AJAY Tower Defense\doc\Frame.html...
+Generating C:\Users\Aaron\Documents\Dropbox\AJAY Tower Defense\doc\package-frame.html...
+Generating C:\Users\Aaron\Documents\Dropbox\AJAY Tower Defense\doc\package-summary.html...
+Generating C:\Users\Aaron\Documents\Dropbox\AJAY Tower Defense\doc\constant-values.html...
+Generating C:\Users\Aaron\Documents\Dropbox\AJAY Tower Defense\doc\serialized-form.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating C:\Users\Aaron\Documents\Dropbox\AJAY Tower Defense\doc\allclasses-frame.html...
+Generating C:\Users\Aaron\Documents\Dropbox\AJAY Tower Defense\doc\allclasses-noframe.html...
+Generating C:\Users\Aaron\Documents\Dropbox\AJAY Tower Defense\doc\index.html...
+Generating C:\Users\Aaron\Documents\Dropbox\AJAY Tower Defense\doc\stylesheet.css...
+1 warning

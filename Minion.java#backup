@@ -1,0 +1,19 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+public  class Minion extends Pathing{
+public int health=0;    
+public Image image = null;
+public Minion(ImageIcon i)
+{
+    super(i);
+}
+
+public void death()
+{
+    if (health == 0)
+    {
+        myImage = null;
+    }
+}
+}

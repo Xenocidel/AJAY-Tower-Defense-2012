@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=x\ y
+comment0.target=Automaton_1000(int,\ int)
+comment1.params=
+comment1.target=void\ reset()
+comment2.params=
+comment2.target=Automaton_1000()
+numComments=3

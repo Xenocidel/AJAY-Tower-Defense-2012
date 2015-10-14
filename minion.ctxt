@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=i
+comment0.target=Minion(javax.swing.ImageIcon)
+comment1.params=
+comment1.target=Minion()
+comment2.params=
+comment2.target=void\ death()
+comment3.params=x
+comment3.target=void\ setHealth(int)
+comment4.params=
+comment4.target=void\ addGold()
+comment5.params=
+comment5.target=java.lang.String\ getMyName()
+comment6.params=
+comment6.target=boolean\ isMinionDead()
+comment7.params=
+comment7.target=void\ attack()
+numComments=8
